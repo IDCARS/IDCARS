@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+:root {
+  /* IDCARS palette using CSS vars consumed by Tailwind config */
+  --background: 0 0% 3.5%; /* ~#0A0A0A */
+  --foreground: 0 0% 100%;
+  --card: 0 0% 7%; /* ~#121212 */
+  --card-foreground: 0 0% 100%;
+  --accent: 76 100% 50%; /* #C6FF00 (approx in HSL) */
+  --accent-foreground: 0 0% 5%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 5%;
+  --border: 0 0% 14.9%;
+  --input: 0 0% 14.9%;
+  --ring: 0 0% 83.1%;
+  --radius: 0.75rem;
+}
+
+html, body, #root { height: 100%; }
+body { margin: 0; font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; }
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground; }
+}

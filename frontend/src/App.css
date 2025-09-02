@@ -1,0 +1,26 @@
+/* IDCARS custom animations and utility classes */
+
+@keyframes floatUp {
+  0% { transform: translateY(6px); opacity: 0.85; }
+  50% { transform: translateY(-6px); opacity: 1; }
+  100% { transform: translateY(6px); opacity: 0.85; }
+}
+
+.glow-accent {
+  box-shadow: 0 0 20px rgba(198, 255, 0, 0.35), 0 0 40px rgba(198, 255, 0, 0.15);
+}
+
+.hero-gradient {
+  background: radial-gradient(60% 60% at 50% 10%, rgba(198, 255, 0, 0.15) 0%, rgba(10,10,10,0) 60%),
+              linear-gradient(180deg, rgba(198,255,0,0.05) 0%, rgba(10,10,10,0) 30%);
+}
+
+.card-hover {
+  transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+}
+.card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0,0,0,0.4); }
+
+.btn-cta { transition: transform 150ms ease; }
+.btn-cta:hover { transform: translateY(-1px) scale(1.01); }
+
+.badge-pill { border-radius: 9999px; }
